@@ -369,68 +369,58 @@ class Register extends Component {
         <div><img src={festlogo} className='festlogo' alt='festlogo' /></div>
          <div><h1 className='display-3'>VISVOSTAVAM</h1></div>
       </div>
-      {/* <div>
-      <h4 className='pdfdetails'>Id number : {this.state.idnumber}</h4>
-        <h4 className='pdfdetails'> Selected Event : {this.state.programs}</h4>
-        <h4 className='pdfdetails'>College Name : {this.state.collegename}</h4>
-        <h4 className='pdfdetails'>Branch : {this.state.branch}</h4>
-        <h4 className='pdfdetails'>No of Members : {this.state.noofmembers}</h4>
-        <h4 className='pdfdetails'>Group Members : {this.state.participants}</h4>
-        <h4 className='pdfdetails'>Roll Numbers : {this.state.strollnos}</h4>
-        <h4 className='pdfdetails'>Email : {this.state.email}</h4>
-        <h4 className='pdfdetails'>Transaction Reference Number : DUI{this.state.refno}</h4>
-      </div> */}
+     
       <div>
-        <table> 
-          <tr>
-            <td>ID Number</td>
+          <table class="table">
+          <tbody>
+           <tr>
+            <th>ID Number</th>
             <td>:</td>
             <td>{this.state.idnumber}</td>
           </tr>
           <tr>
-          <td>Selected Event</td>
+          <th>Selected Event</th>
           <td>:</td>
           <td>{this.state.programs}</td>
           </tr>
           <tr>
-          <td>College Name</td>
+          <th>College Name</th>
           <td>:</td>
           <td>{this.state.collegename}</td>
           </tr>
           <tr>
-          <td>Branch</td>
+          <th>Branch</th>
           <td>:</td>
           <td>{this.state.branch}</td>
           </tr>
           <tr>
-          <td>No of Members</td>
+          <th>No of Members</th>
           <td>:</td>
           <td>{this.state.noofmembers}</td>
           </tr>
           <tr>
-          <td>Group Members</td>
+          <th>Group Members</th>
           <td>:</td>
           <td>{this.state.participants}</td>
           </tr>
           <tr>
-          <td>Roll Numbers</td>
+          <th>Roll Numbers</th>
           <td>:</td>
           <td>{this.state.strollnos}</td>
           </tr>
           <tr>
-          <td>Email</td>
+          <th>Email</th>
           <td>:</td>
           <td>{this.state.email}</td>
           </tr>
           <tr>
-          <td>Transaction Reference Number</td>
+          <th>Transaction Reference Number</th>
           <td>:</td>
           <td>DUI{this.state.refno}</td>
           </tr>
-        </table>
+       </tbody>
+    </table>
       </div>
-      
-      
             </div>}
             {this.state.flag && <div className='text-center'> <button className='btn btn-secondary text-center' onClick={this.pdfGenerate} >Download Pdf</button>
             <Link to='/' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-dark my-1 mx-2">Back to Home</button></Link>

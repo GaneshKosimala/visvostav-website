@@ -129,12 +129,9 @@ body{
 .receipt{
     width: 590px;
     margin: 2% auto;
-    border: 1px solid;
 }
 table{
-    /* text-align: center; */
     margin: 8px;
-    font-size: 18px;
 }
 .topcontainer2{
     display: flex;
