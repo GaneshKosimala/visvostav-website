@@ -21,7 +21,7 @@ router.post('/signup',(request,response)=>{
      .catch( error =>{
          response.json(error)
      })
-    //  console.log(signedUpUser)
+     console.log(signedUpUser)
     
  }) 
 
