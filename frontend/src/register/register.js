@@ -25,7 +25,7 @@ var events = [
   },
   {
     value:'Poster Presentation',
-    label:'POster Presentation'
+    label:'Poster Presentation'
   },
   {
     value:'Paper Presentation',
@@ -237,22 +237,21 @@ class Register extends Component {
       refno:this.state.refno
     }
     axios.post('http://localhost:4000/app/signup',registered)
-  
     .then(
       response =>{
-        console.log(response)
+        // console.log(response)
         this.setState({
           flag:true
         })
-        console.log(response.status)
+        // console.log(response.status)
       })
       .catch(
         err => {
           alert(`${err} : Please try again`)
         }
       )
+    }
   }
-}
 
   payment(event){
     event.preventDefault()
