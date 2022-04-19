@@ -2,7 +2,7 @@ import React from 'react'
 import pdf from '../pdfs/rulesforfest.pdf';
 import presentation from "../images/presentation.png";
 import projectexpo from "../images/projectexpo.jpg";
-import quiz from "../images/quiz.png";
+import quiz from "../images/quiz.jpg";
 import circuitrix from "../images/circuitrix-2.jpg";
 import coding from "../images/debug.jpg";
 import poster from '../images/poster.jpg';

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css';
-import horsetail from '../images/horsetail.jpeg';
+import horsetail from '../images/horsetail.jpg';
 import touch from '../images/touch.jpeg';
 import juice from "../images/juice.jpg";
 import pyramid from "../images/pyramid.jpeg";
@@ -18,7 +18,7 @@ import panipuri  from "../images/panipuri.jpg";
 import corn from "../images/popcorn.jpg";
 import pizza from "../images/pizza.jpg";
 import updown from '../images/7updown.jpeg';
-import housy from '../images/housy.jpeg';
+import housy from '../images/housy.jpg';
 import { Link } from 'react-router-dom';
 
 function Stalls (){
