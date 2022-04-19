@@ -17,6 +17,7 @@ router.post('/signup',(request,response)=>{
      signedUpUser.save()
      .then(data => {
          response.json(data)
+         console.log(data)
      })
      .catch(error => {
          response.json(error)

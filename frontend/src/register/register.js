@@ -117,12 +117,12 @@ class Register extends Component {
 
   handleChange(e){
     this.setState({programs:e.target.value});
-    console.log(e.target.value);
+    // console.log(e.target.value);
   }
 
   handleBranch(e){
     this.setState({branch:e.target.value});
-    console.log(e.target.value);
+    // console.log(e.target.value);
   }
 
   saveInput = (e) => {
@@ -157,7 +157,7 @@ class Register extends Component {
     this.setState({
      noofmembers: event.target.value
     })
-    console.log(this.state.noofmembers)
+    // console.log(this.state.noofmembers)
   }
   changeemail(event) {
     this.setState({
@@ -222,7 +222,6 @@ class Register extends Component {
     const part = this.state.names.join(',').toString()
     const rnos = this.state.rollnumbers.join(',').toString()
     this.setState({
-      flag:true,
       participants:part,
       strollnos:rnos,
       idnumber:x
@@ -238,9 +237,20 @@ class Register extends Component {
       refno:this.state.refno
     }
     axios.post('http://localhost:4000/app/signup',registered)
-    .then(response => {
-      console.log(response.data);
-    })
+  
+    .then(
+      response =>{
+        console.log(response)
+        this.setState({
+          flag:true
+        })
+        console.log(response.status)
+      })
+      .catch(
+        err => {
+          alert(`${err} : Please try again`)
+        }
+      )
   }
 }
 
