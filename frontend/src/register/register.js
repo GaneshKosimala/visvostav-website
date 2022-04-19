@@ -280,6 +280,7 @@ class Register extends Component {
             <div className='fields'>
               <h1 className='display-1'>Register</h1>
               <hr />
+              <div className='text-secondary'>*If you entered any wrong values simply refresh page and refill form again</div>
               <div>
               <button type="button" class="btn btn-warning my-2 mx-2" onClick={this.payment}>Complete your Payment here!</button>
               <Link to='/paymentrules'target="_blank" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-secondary my-1 mx-2">Payment procedure</button></Link>
@@ -318,8 +319,8 @@ class Register extends Component {
           <div>
           
             <label htmlFor='exampleFormControlInput1' className='form-label my-2 text'>Name</label>
+            <div className='text-secondary'>Enter name and click 'Add Name' button to proceed</div>
             <input type='text'  class="form-control my-1 mx-2"  onChange={this.saveInput} placeholder='enter student name' />
-           
             <button className='btn btn-success my-2' onClick={this.addNewItem}>Add Name</button>
             {this.state.value && <div className='mx-2 text-success'>user added successfully continue adding all the members of group</div>}
             {this.state.value && <div><button className='btn btn-info' onClick={this.showgroup}>Group info</button>
@@ -332,6 +333,7 @@ class Register extends Component {
           </div>
             <div>
             <label htmlFor='exampleFormControlInput1' className='form-label my-2 text'>Roll No</label>
+            <div className='text-secondary'>Enter roll number and click 'Add Rll No' button to proceed</div>
             <input type='text' class="form-control my-1 mx-2" onChange={this.saverollno} placeholder='enter full roll number'/>
             <button className='btn btn-success my-2' onClick={this.addNewrollno}>Add Roll No</button>
             {this.state.rvalue && <div className='mx-2 text-success'>roll no added successfully continue adding all the roll numbers of group</div>}
@@ -389,6 +391,7 @@ class Register extends Component {
             {this.state.flag && <div className='text-center'> <button className='btn btn-secondary text-center' onClick={this.pdfGenerate} >Download Pdf</button>
             <Link to='/' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-dark my-1 mx-2">Back to Home</button></Link>
             <div className='text-danger text-center'>* If any details are incorrect fill out register form again</div>
+            <div className='text-danger text-center'>* Click on 'Download Pdf' button and don't forget to bring that hardcopy while coming to the event</div>
             </div>}
       </div>
     )
