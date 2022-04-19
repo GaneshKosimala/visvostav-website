@@ -36,10 +36,7 @@ function Stalls (){
             <p className="card-text">
               Here we can have a variety of flowers and students can buy their desired ones.rose is a flower, often with a pleasant smell, which grows on a bush with stems that have sharp points called thorns on them. She bent to pick a red rose.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -49,10 +46,7 @@ function Stalls (){
             <p className="card-text">
             The original chat is a mixture of potato pieces, crisp fried bread dahi vada or dahi bhalla, gram or chickpeas and tangy-salty spices, with sour Indian chili and saunth (dried ginger and tamarind sauce), fresh green coriander leaves.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -62,10 +56,7 @@ function Stalls (){
             <p className="card-text">
             Juices are the perfect drink to kick start the day. It doesn't get any healthier than to start a day with freshly squeezed juice out of pulpy fruits. Juices are always refreshing, and people love them through different weathers.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -75,10 +66,7 @@ function Stalls (){
             <p className="card-text">
             Most arts and crafts activities consist of moving fingers and hands, they help in developing fine motor skills. Simple actions like holding a paintbrush and coloring with pencils help strengthen muscles and improve their control.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -88,10 +76,7 @@ function Stalls (){
             <p className="card-text">
             A pedicure is a cosmetic treatment of the feet and toenails, analogous to a manicure. Pedicures include care not only for the toenails; dead skin cells are rubbed off the bottom of the feet using a rough stone. Skin care is often provided up to the knee, including granular exfoliation, moisturizing, and massage.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -101,10 +86,7 @@ function Stalls (){
             <p className="card-text">
             Ring toss is a game where rings are tossed around a peg. It is common at carnivals.A variant, sometimes referred to as "ring-a-bottle", replaces pegs with bottles, where the thrower may keep the bottle (and its contents) if successful.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -114,10 +96,7 @@ function Stalls (){
             <p className="card-text">
             Balloons are fun to each and every ages.In this stall you can take a chance to make the balloons blow off! By adding in a few easy rules it will be a very good and fun game. 
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -127,10 +106,7 @@ function Stalls (){
             <p className="card-text">
             food stalls will be most beneficial for you as almost every person buys some food in fests or events perticularly and yes, watter bottles are the best.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -140,10 +116,7 @@ function Stalls (){
             <p className="card-text">
               Here you can get a beautiful chance of making your moments into memories.Photo frames are a great way to showcase photos that are special to you. Be it birthdays, wedding pics, or trip memories, displaying moments that are special ...
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -153,10 +126,7 @@ function Stalls (){
             <p className="card-text">
             Mehendi is a form of body art and temporary skin decoration from the Indian subcontinent usually drawn on hands or legs, in which decorative designs are created on a person's body, using a paste, created from the powdered dry leaves of the henna plant
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -167,10 +137,7 @@ function Stalls (){
             This stall invovles the shooting of the things and it will defenitely be a very good fun event for all kinds of ages.
             archery, sport involving shooting arrows with a bow, either at an inanimate target.You can show up your shooting skills over here!
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -180,10 +147,7 @@ function Stalls (){
             <p className="card-text">
             pizza is unique and tastes great. High-quality, fresh ingredients are important for flavor, and you can also experiment with various toppings to design innovative pizzas.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -194,10 +158,7 @@ function Stalls (){
             You can have a quite good taste of popcorn over here.
             Popcorn is a whole grain food that is high in important nutrients. This includes vitamins, minerals and very high amounts of fiber.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -207,10 +168,7 @@ function Stalls (){
             <p className="card-text">
             First of all Pyramid is an interesting game. Where the objective is to remove all the glass from the pyramid the foundation. Pyramid game made a different thing. As like (glass, card Pepsi bottle and dabba ).
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -220,10 +178,7 @@ function Stalls (){
             <p className="card-text">
             Players buy ticket books to play at the start of each session. A Housie Caller selects numbers at random which are then announced to the players. Each player marks off the numbers on their ticket as they are called. A player wins if they can mark off all the numbers on their ticket first.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -233,10 +188,7 @@ function Stalls (){
             <p className="card-text">
             Seven Up Seven Down is a simple dice game, two 6 sided dice are rolled and the results are totalled up. You can bet on the total being over 7, under 7 or exactly seven.
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -246,10 +198,7 @@ function Stalls (){
             <p className="card-text">
             The game is made up of a thin copper wire with a bulb holder attached to it that can be used as a touch-me-not game
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -259,10 +208,7 @@ function Stalls (){
             <p className="card-text">
             Ice cream is a sweetened frozen food typically eaten as a snack or dessert. It may be made from milk or cream and is flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit such as strawberries or peaches
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -272,11 +218,7 @@ function Stalls (){
             <p className="card-text">
               This is a fun game for students.You can have a good fun over here
             </p>
-            <div className='eventbtns'>
-              <Link to='/rules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
-              <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
-          
-            </div>
+            <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
           </div>
         </div>
 

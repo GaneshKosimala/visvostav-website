@@ -246,7 +246,7 @@ class Register extends Component {
 
   payment(event){
     event.preventDefault()
-    window.location.href='https://www.onlinesbi.com/sbicollect'
+    window.open("https://www.onlinesbi.com/sbicollect");
   }
   pdfGenerate = ()  => {
     var doc = new jsPDF('p','pt','a4');
@@ -273,7 +273,7 @@ class Register extends Component {
               <hr />
               <div>
               <button type="button" class="btn btn-warning my-2 mx-2" onClick={this.payment}>Complete your Payment here!</button>
-              <Link to='/paymentrules' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-secondary my-1 mx-2">Payment procedure</button></Link>
+              <Link to='/paymentrules'target="_blank" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-secondary my-1 mx-2">Payment procedure</button></Link>
               <br />
               <label htmlFor="exampleFormControlInput1" class="form-label my-1 mx-2 text">Select Event</label>
             <select value={this.state.programs} onChange={this.handleChange}>

@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const signUpTemplateCopy =require('../schema/signupmodels')
-const bcrypt = require('bcrypt')
+
 
 router.post('/signup',(request,response)=>{
     const signedUpUser=new signUpTemplateCopy({
