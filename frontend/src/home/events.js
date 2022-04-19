@@ -1,4 +1,5 @@
 import React from 'react'
+import pdf from '../pdfs/rulesforfest.pdf';
 import presentation from "../images/presentation.png";
 import projectexpo from "../images/projectexpo.jpg";
 import quiz from "../images/quiz.png";
@@ -20,7 +21,7 @@ function Events  ()  {
             <h5 className="card-title">Coding</h5>
             <p className="card-text">In coding you have to solve a logical question by your logical and intellectual skills.You can discuss with your group and crack the solution</p>
             <div className='eventbtns'>
-              <Link to='/rules' target="_blank" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
+              <button type="button" class="btn btn-warning my-4 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'black' }}>Rules</a></button>
               <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
             </div>
           </div>
@@ -33,7 +34,7 @@ function Events  ()  {
               Project Expo is a technical event in which the participants should submit their project ideas and prepare their project at home and they must bring the project to demonstrate at the event.
             </p>
             <div className='eventbtns'>
-              <Link to='/rules'target="_blank" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
+            <button type="button" class="btn btn-warning my-4 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'black' }}>Rules</a></button>
               <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
             </div>
           </div>
@@ -44,7 +45,7 @@ function Events  ()  {
             <h5 className="card-title">Technical Quiz</h5>
             <p className="card-text">Battle of Brains is a Technical Quiz game of questions and answers on all topics of TECHNICAL knowledge that is played by technical students.</p>
             <div className='eventbtns'>
-              <Link to='/rules'target="_blank" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
+            <button type="button" class="btn btn-warning my-4 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'black' }}>Rules</a></button>
               <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
             </div>
           </div>
@@ -55,7 +56,7 @@ function Events  ()  {
             <h5 className="card-title">Circuitrix</h5>
             <p className="card-text">Circuitrix is all about circuits and electronics. It is a platform for all electronics enthusiasts to exhibit their skill against the best in the specialization. Circuitrix is an event which will test a participant's knowledge on the basics of electronics and build a base in this field.</p>
             <div className='eventbtns'>
-              <Link to='/rules'target="_blank" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
+            <button type="button" class="btn btn-warning my-4 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'black' }}>Rules</a></button>
               <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
             </div>
         </div>
@@ -66,7 +67,7 @@ function Events  ()  {
             <h5 className="card-title">Paper Presentation</h5>
             <p className="card-text">Paper presentation is an  competition where each participant is required to make a paper about a given topic or area, and then present it in front of the juries.</p>
             <div className='eventbtns'>
-              <Link to='/rules'target="_blank" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
+            <button type="button" class="btn btn-warning my-4 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'black' }}>Rules</a></button>
               <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
             </div>
           </div>
@@ -78,7 +79,7 @@ function Events  ()  {
             <p className="card-text">A poster presentation is a way to communicate your research or your understanding of a topic in a concise and visually engaging format.
 </p>
             <div className='eventbtns'>
-              <Link to='/rules'target="_blank" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-warning my-4 mx-2">Rules</button></Link>
+            <button type="button" class="btn btn-warning my-4 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'black' }}>Rules</a></button>
               <Link to='/register' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4 mx-2">Join Now!</button></Link>
             </div>
           </div>

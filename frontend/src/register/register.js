@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import jsPDF from "jspdf";
 import festlogo from '../images/VisvotsavLogo.png';
 import axios from 'axios';
+import pdf from '../pdfs/paymentrules.pdf';
 
 
 var events = [
@@ -278,7 +279,7 @@ class Register extends Component {
               <div className='text-secondary'>*If you entered any wrong values simply refresh page and refill form again</div>
               <div>
               <button type="button" class="btn btn-warning my-2 mx-2" onClick={this.payment}>Complete your Payment here!</button>
-              <Link to='/paymentrules'target="_blank" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-secondary my-1 mx-2">Payment procedure</button></Link>
+              <button type="button" class="btn btn-secondary my-1 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'white' }}>Payment procedure</a></button>
               <br />
               <label htmlFor="exampleFormControlInput1" class="form-label my-1 mx-2 text">Select Event</label>
             <select value={this.state.programs} onChange={this.handleChange}>
