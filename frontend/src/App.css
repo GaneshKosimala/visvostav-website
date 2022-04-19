@@ -115,6 +115,8 @@ body{
 
 .base{
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 2px auto;
     width: 90%;
 }
@@ -125,8 +127,14 @@ body{
 }
 
 .receipt{
-    width: 500px;
+    width: 590px;
     margin: 2% auto;
+    border: 1px solid;
+}
+table{
+    /* text-align: center; */
+    margin: 8px;
+    font-size: 18px;
 }
 .topcontainer2{
     display: flex;
@@ -149,6 +157,21 @@ body{
     color: black;
     font-weight: 500;
 }
+.socialmedia{
+    font-size: 16px;
+    list-style: none;
+    color: black;
+}
+
+.socialmedia:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.querymail{
+    font-size: 26px;
+    text-align: center;
+}
 @media screen and (max-width:480px){
     .footersections{
         width: 100%;
@@ -164,6 +187,10 @@ body{
         font-weight: bold;
         margin-left: 5px;
         color: black;
+    }
+    .querymail{
+        font-size: 15px;
+        text-align: left;
     }
   
 }

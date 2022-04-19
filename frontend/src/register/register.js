@@ -64,8 +64,6 @@ var branches = [
     }
 ]
 
-
-
 class Register extends Component {
   constructor() {
     super()
@@ -117,12 +115,10 @@ class Register extends Component {
 
   handleChange(e){
     this.setState({programs:e.target.value});
-    // console.log(e.target.value);
   }
 
   handleBranch(e){
     this.setState({branch:e.target.value});
-    // console.log(e.target.value);
   }
 
   saveInput = (e) => {
@@ -157,7 +153,6 @@ class Register extends Component {
     this.setState({
      noofmembers: event.target.value
     })
-    // console.log(this.state.noofmembers)
   }
   changeemail(event) {
     this.setState({
@@ -243,7 +238,7 @@ class Register extends Component {
         this.setState({
           flag:true
         })
-        // console.log(response.status)
+        console.log(response.status)
       })
       .catch(
         err => {
@@ -308,7 +303,7 @@ class Register extends Component {
                 <option value={option.value}>{option.label}</option>
               ))}
             </select>
-            {this.state.branch.length != 0 && (<h3 className='my-2'>You selected : {this.state.branch}</h3>)}
+            {this.state.branch.length !== 0 && (<h3 className='my-2'>You selected : {this.state.branch}</h3>)}
             </div>
             <div className='text-danger'>{this.state.brancherr}</div>
           <div class="mb-3">
@@ -355,7 +350,7 @@ class Register extends Component {
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label my-2 text">Transaction Reference Number</label>
             <div className='refbtn'>
-                        <a href="#" className="btn btn-warning" style={{ marginRight: '5%' }}>DUI</a>
+                        <a href="#"  rel='noreferrer noopener' className="btn btn-warning" style={{ marginRight: '5%' }}>DUI</a>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your reference number last 7 digits" onChange={this.changerefno} />
             </div>
         </div>
@@ -371,10 +366,10 @@ class Register extends Component {
       </div>
      {this.state.flag && <div id='receipt' className='receipt'><br/>
      <div className="container-fluid topcontainer2 text-center">
-        <div><img src={festlogo} className='festlogo' /></div>
+        <div><img src={festlogo} className='festlogo' alt='festlogo' /></div>
          <div><h1 className='display-3'>VISVOSTAVAM</h1></div>
       </div>
-      <div>
+      {/* <div>
       <h4 className='pdfdetails'>Id number : {this.state.idnumber}</h4>
         <h4 className='pdfdetails'> Selected Event : {this.state.programs}</h4>
         <h4 className='pdfdetails'>College Name : {this.state.collegename}</h4>
@@ -384,6 +379,55 @@ class Register extends Component {
         <h4 className='pdfdetails'>Roll Numbers : {this.state.strollnos}</h4>
         <h4 className='pdfdetails'>Email : {this.state.email}</h4>
         <h4 className='pdfdetails'>Transaction Reference Number : DUI{this.state.refno}</h4>
+      </div> */}
+      <div>
+        <table> 
+          <tr>
+            <td>ID Number</td>
+            <td>:</td>
+            <td>{this.state.idnumber}</td>
+          </tr>
+          <tr>
+          <td>Selected Event</td>
+          <td>:</td>
+          <td>{this.state.programs}</td>
+          </tr>
+          <tr>
+          <td>College Name</td>
+          <td>:</td>
+          <td>{this.state.collegename}</td>
+          </tr>
+          <tr>
+          <td>Branch</td>
+          <td>:</td>
+          <td>{this.state.branch}</td>
+          </tr>
+          <tr>
+          <td>No of Members</td>
+          <td>:</td>
+          <td>{this.state.noofmembers}</td>
+          </tr>
+          <tr>
+          <td>Group Members</td>
+          <td>:</td>
+          <td>{this.state.participants}</td>
+          </tr>
+          <tr>
+          <td>Roll Numbers</td>
+          <td>:</td>
+          <td>{this.state.strollnos}</td>
+          </tr>
+          <tr>
+          <td>Email</td>
+          <td>:</td>
+          <td>{this.state.email}</td>
+          </tr>
+          <tr>
+          <td>Transaction Reference Number</td>
+          <td>:</td>
+          <td>DUI{this.state.refno}</td>
+          </tr>
+        </table>
       </div>
       
       

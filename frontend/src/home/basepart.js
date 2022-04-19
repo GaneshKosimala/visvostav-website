@@ -2,38 +2,26 @@ import React, { Component } from 'react';
 import '../App.css';
 
 class Basepart extends Component {
-  constructor() {
-    super()
-    this.state={
 
-    }
-  }
-  fb(event){
-    event.preventDefault()
-    window.location.href='https://www.facebook.com'
-  }
-
-  insta(event){
-    event.preventDefault()
-    window.location.href='https://www.instagram.com/p/CcW4QjbJPZC/?igshid=MDJmNzVkMjY='
-  }
-render(){
+  render(){
 
       return (
         <div>
-        <div class="container my-4">
-        <h1 className='card-text text-danger display-6 mx-4'>Follow Us On</h1><hr />
-      </div>
+          <div className='querymail mx-2'>
+          Lost your document! mail us with DUI number : <span className='text-danger'>visvotsavqueries@gmail.com</span>
+          </div>
+          <hr />
         <div className='base'>
-            <div>
-            <button type="button" class="btn btn-primary my-2 mx-2" onClick={this.fb}>Facebook</button>
-            </div>
+       <div> <h1 className='card-text text-danger display-6'>Follow Us :</h1></div>
+       <div>
+           <a href='https://www.facebook.com/pbrvitsofficial/' className='socialmedia' target="_blank" rel='noreferrer noopener'>Facebook</a>
+           </div>
            <div>
-           <button type="button" class="btn btn-warning my-2 mx-2" onClick={this.insta}>Instagram</button>
+           <a href='https://www.instagram.com/p/CcW4QjbJPZC/?igshid=MDJmNzVkMjY=' className='socialmedia' target="_blank" rel='noreferrer noopener'>Instagram</a>
            </div>
         </div>
+       
         <div>
-             
                 <p className="display-6 devdetails">
                 Developed by © K GANESH , P AMULYA 
                 </p>

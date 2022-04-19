@@ -15,7 +15,7 @@ function Events  ()  {
       <div style={{ width: '90%', margin: '1% auto' }}><hr /></div>
       <div className='depts'>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={coding} className="card-img-top" alt="camera" />
+          <img src={coding} className="card-img-top" alt="coding" />
           <div className="card-body">
             <h5 className="card-title">Coding</h5>
             <p className="card-text">In coding you have to solve a logical question by your logical and intellectual skills.You can discuss with your group and crack the solution</p>
@@ -26,7 +26,7 @@ function Events  ()  {
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={projectexpo} className="card-img-top" alt="camera" />
+          <img src={projectexpo} className="card-img-top" alt="project expo" />
           <div className="card-body">
             <h5 className="card-title">Project Expo</h5>
             <p className="card-text">
@@ -39,7 +39,7 @@ function Events  ()  {
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={quiz} className="card-img-top" alt="camera" />
+          <img src={quiz} className="card-img-top" alt="quiz" />
           <div className="card-body">
             <h5 className="card-title">Technical Quiz</h5>
             <p className="card-text">Battle of Brains is a Technical Quiz game of questions and answers on all topics of TECHNICAL knowledge that is played by technical students.</p>
@@ -50,7 +50,7 @@ function Events  ()  {
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={circuitrix} className="card-img-top" alt="camera" />
+          <img src={circuitrix} className="card-img-top" alt="circuitrix" />
           <div className="card-body">
             <h5 className="card-title">Circuitrix</h5>
             <p className="card-text">Circuitrix is all about circuits and electronics. It is a platform for all electronics enthusiasts to exhibit their skill against the best in the specialization. Circuitrix is an event which will test a participant's knowledge on the basics of electronics and build a base in this field.</p>
@@ -61,7 +61,7 @@ function Events  ()  {
         </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={presentation} className="card-img-top" alt="camera" />
+          <img src={presentation} className="card-img-top" alt="paper presentation" />
           <div className="card-body">
             <h5 className="card-title">Paper Presentation</h5>
             <p className="card-text">Paper presentation is an  competition where each participant is required to make a paper about a given topic or area, and then present it in front of the juries.</p>
@@ -72,7 +72,7 @@ function Events  ()  {
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={poster} className="card-img-top" alt="camera" />
+          <img src={poster} className="card-img-top" alt="poster presentation" />
           <div className="card-body">
             <h5 className="card-title">Poster Presentation</h5>
             <p className="card-text">A poster presentation is a way to communicate your research or your understanding of a topic in a concise and visually engaging format.

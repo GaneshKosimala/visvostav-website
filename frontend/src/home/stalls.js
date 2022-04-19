@@ -30,7 +30,7 @@ function Stalls (){
       </div>
                   <div className='depts'>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={rose} className="card-img-top" alt="camera" />
+          <img src={rose} className="card-img-top" alt="rose stall" />
           <div className="card-body">
             <h5 className="card-title">Rose Stall</h5>
             <p className="card-text">
@@ -40,7 +40,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={panipuri} className="card-img-top" alt="camera" />
+          <img src={panipuri} className="card-img-top" alt="chat stall" />
           <div className="card-body">
             <h5 className="card-title">Chat Bandar</h5>
             <p className="card-text">
@@ -50,7 +50,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={juice} className="card-img-top" alt="camera" />
+          <img src={juice} className="card-img-top" alt="juice stall" />
           <div className="card-body">
             <h5 className="card-title">Juice and Fruit Stall</h5>
             <p className="card-text">
@@ -60,7 +60,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={crafts} className="card-img-top" alt="camera" />
+          <img src={crafts} className="card-img-top" alt="crafts stall" />
           <div className="card-body">
             <h5 className="card-title">Crafts</h5>
             <p className="card-text">
@@ -70,7 +70,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={pedicure} className="card-img-top" alt="camera" />
+          <img src={pedicure} className="card-img-top" alt="pedicure stall" />
           <div className="card-body">
             <h5 className="card-title">Pedicure</h5>
             <p className="card-text">
@@ -80,7 +80,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={ringtoss} className="card-img-top" alt="camera" />
+          <img src={ringtoss} className="card-img-top" alt="ring toss stall" />
           <div className="card-body">
             <h5 className="card-title">Ring Toss</h5>
             <p className="card-text">
@@ -90,7 +90,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={balloon} className="card-img-top" alt="camera" />
+          <img src={balloon} className="card-img-top" alt="balloon stall" />
           <div className="card-body">
             <h5 className="card-title">Balloon games</h5>
             <p className="card-text">
@@ -100,7 +100,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={buffeet} className="card-img-top" alt="camera" />
+          <img src={buffeet} className="card-img-top" alt="food stall" />
           <div className="card-body">
             <h5 className="card-title">Food Stall</h5>
             <p className="card-text">
@@ -110,7 +110,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={gallery} className="card-img-top" alt="camera" />
+          <img src={gallery} className="card-img-top" alt="gallery stall" />
           <div className="card-body">
             <h5 className="card-title">Photo frame and Gallery stall</h5>
             <p className="card-text">
@@ -120,7 +120,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={mehandi} className="card-img-top" alt="camera" />
+          <img src={mehandi} className="card-img-top" alt="mehandi stall" />
           <div className="card-body">
             <h5 className="card-title">Tatoo and Mehandi stall</h5>
             <p className="card-text">
@@ -130,7 +130,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={arrow} className="card-img-top" alt="camera" />
+          <img src={arrow} className="card-img-top" alt="arrow stall" />
           <div className="card-body">
             <h5 className="card-title">Arrowing the target</h5>
             <p className="card-text">
@@ -141,7 +141,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={pizza} className="card-img-top" alt="camera" />
+          <img src={pizza} className="card-img-top" alt="pizza stall" />
           <div className="card-body">
             <h5 className="card-title">Lassi,Cool drinks,Pizza Stall</h5>
             <p className="card-text">
@@ -151,7 +151,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={corn} className="card-img-top" alt="camera" />
+          <img src={corn} className="card-img-top" alt="popcorn stall" />
           <div className="card-body">
             <h5 className="card-title">Popcorn Stall</h5>
             <p className="card-text">
@@ -162,7 +162,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={pyramid} className="card-img-top" alt="camera" />
+          <img src={pyramid} className="card-img-top" alt="pyramid stall" />
           <div className="card-body">
             <h5 className="card-title">Throwing a ball on pyramid of glass</h5>
             <p className="card-text">
@@ -172,7 +172,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={housy} className="card-img-top" alt="camera" />
+          <img src={housy} className="card-img-top" alt="housy stall" />
           <div className="card-body">
             <h5 className="card-title">Housy</h5>
             <p className="card-text">
@@ -182,7 +182,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={updown} className="card-img-top" alt="camera" />
+          <img src={updown} className="card-img-top" alt="7up and down stall" />
           <div className="card-body">
             <h5 className="card-title">7Up and Down</h5>
             <p className="card-text">
@@ -192,7 +192,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={touch} className="card-img-top" alt="camera" />
+          <img src={touch} className="card-img-top" alt="touch me not stall" />
           <div className="card-body">
             <h5 className="card-title">Touch Me Not</h5>
             <p className="card-text">
@@ -202,7 +202,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={icecream} className="card-img-top" alt="camera" />
+          <img src={icecream} className="card-img-top" alt="icecram stall" />
           <div className="card-body">
             <h5 className="card-title">Smoke Icecream</h5>
             <p className="card-text">
@@ -212,7 +212,7 @@ function Stalls (){
           </div>
         </div>
         <div className="card branches" style={{ width: '21rem' }}>
-          <img src={horsetail} className="card-img-top" alt="camera" />
+          <img src={horsetail} className="card-img-top" alt="horse tail stall" />
           <div className="card-body">
             <h5 className="card-title">Horse Tail</h5>
             <p className="card-text">

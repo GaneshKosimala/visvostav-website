@@ -5,6 +5,7 @@ export const Footer = () => {
         <div>
              <div class="container my-4">
         <h1 className='display-4'>Contact Us</h1>
+        
       </div>
       <div style={{ width: '90%', margin: '1% auto' }}><hr /></div>
         <div className="footerbody">
