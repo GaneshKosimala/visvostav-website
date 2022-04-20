@@ -128,7 +128,7 @@ class Register extends Component {
 
   addNewItem = (e) => {
     e.preventDefault()
-    let { names, member } = this.state;
+    let { member } = this.state;
     this.state.names.push(member);
     this.setState({
       value:true
@@ -142,7 +142,7 @@ class Register extends Component {
 
   addNewrollno= (e) => {
     e.preventDefault()
-    let { rollnumbers, rollno } = this.state;
+    let { rollno } = this.state;
     this.state.rollnumbers.push(rollno);
     this.setState({
       rvalue:true
@@ -187,7 +187,7 @@ class Register extends Component {
     if(!this.state.collegename){
         clgnameerr = "College Name is Required"
     }
-    const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const reg = /^[a-zA-z0-9+_.-]+@(g|a)mail.com$/;
     if(!this.state.email || reg.test(this.state.email) === false){
       emailerr  = "Email Field is Invalid";
     }
@@ -279,7 +279,7 @@ class Register extends Component {
               <div className='text-secondary'>*If you entered any wrong values simply refresh page and refill form again</div>
               <div>
               <button type="button" class="btn btn-warning my-2 mx-2" onClick={this.payment}>Complete your Payment here!</button>
-              <button type="button" class="btn btn-secondary my-1 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'white' }}>Payment procedure</a></button>
+              <button type="button" class="btn btn-secondary my-1 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'white' }} rel='noreferrer noopener'>Payment procedure</a></button>
               <br />
               <label htmlFor="exampleFormControlInput1" class="form-label my-1 mx-2 text">Select Event</label>
             <select value={this.state.programs} onChange={this.handleChange}>
@@ -351,7 +351,7 @@ class Register extends Component {
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label my-2 text">Transaction Reference Number</label>
             <div className='refbtn'>
-                        <a href="#"  rel='noreferrer noopener' className="btn btn-warning" style={{ marginRight: '5%' }}>DUI</a>
+                        <button className='btn btn-warning' style={{ marginRight: '4%' }}>DUI</button>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your reference number last 7 digits" onChange={this.changerefno} />
             </div>
         </div>
@@ -366,7 +366,7 @@ class Register extends Component {
       </form>}
       </div>
      {this.state.flag && <div id='receipt' className='receipt'><br/>
-     <div className="container-fluid topcontainer2 text-center">
+     <div className="container-fluid topcontainer2 text-left">
         <div><img src={festlogo} className='festlogo' alt='festlogo' /></div>
          <div><h1 className='display-3'>VISVOSTAVAM</h1></div>
       </div>

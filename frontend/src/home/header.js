@@ -14,12 +14,12 @@ export const Header = () => {
     <div>
 
       <div className="container-fluid text-center topcontainer">
-        <div><img src={festlogo} className='festlogo' /></div>
+        <div><img src={festlogo} className='festlogo' alt='festlogo' /></div>
          <div><h1 className='display-3'>VISVOSTSAVAM</h1></div>
       </div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light navigation">
         <div className="container-fluid">
-          <div className='menu'><img  src={clglogo} className='vitslogo'/></div>
+          <div className='menu'><img  src={clglogo} className='vitslogo' alt='collegelogo'/></div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
