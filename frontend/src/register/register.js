@@ -85,6 +85,7 @@ class Register extends Component {
       value:false,
       rvalue:false,
       flag:false,
+      load:false,
       refnoerr:'',
       emailerr:'',
       noofmemerr:'',
@@ -220,7 +221,8 @@ class Register extends Component {
     this.setState({
       participants:part,
       strollnos:rnos,
-      idnumber:x
+      idnumber:x,
+      load:true
     })
     const registered = {
       selectedevent:this.state.programs,
@@ -361,17 +363,18 @@ class Register extends Component {
      <input type="submit" class="btn btn-info mx-4 my-4" value="Register" />
      <Link to='/' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-danger my-4">Back to Home</button></Link>
     </div>  
+    {this.state.load && <div className='text-success'>Loading...Please Wait</div>}
         </div>
       </div>
       </form>}
       </div>
      {this.state.flag && <div id='receipt' className='receipt'><br/>
-     <div className="container-fluid topcontainer2 text-left">
+     <div className="container-fluid topcontainer2">
         <div><img src={festlogo} className='festlogo' alt='festlogo' /></div>
-         <div><h1 className='display-3'>VISVOSTAVAM</h1></div>
+         <div><h1 className='display-4'>VISVOSTAVAM</h1></div>
       </div>
-     
-      <div>
+     <hr />
+      <div className='participantdetails'>
           <table class="table">
           <tbody>
            <tr>

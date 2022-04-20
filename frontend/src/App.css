@@ -129,19 +129,18 @@ body{
 .receipt{
     width: 590px;
     margin: 2% auto;
+    border: 1px solid;
 }
 table{
-    margin: 8px;
+  margin: 8px;
+}
+.participantdetails{
+    width: 90%;
 }
 .topcontainer2{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.pdfdetails{
-    text-align: center;
-    font-size: 12px;
-    font-family: sans-serif;
 }
 .vitslogo{
     height: 60px;
