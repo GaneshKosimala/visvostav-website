@@ -17,11 +17,13 @@ router.post('/signup',(request,response)=>{
      signedUpUser.save()
      .then(data => {
          response.json(data)
+         console.log(signedUpUser)
      })
      .catch( error =>{
          response.json(error)
+         console.log(error)
      })
-     console.log(signedUpUser)
+     
     
  }) 
 
