@@ -204,7 +204,7 @@ class Register extends Component {
     }
     const regextransaction = /^\d{7}$/
     if(!this.state.noofmembers || regextransaction.test(this.state.refno) === false){
-      refnoerr = "DUI number filed is Invalid"
+      refnoerr = "DUI number field is Invalid"
     }
     if(clgnameerr || brancherr || eventerr || refnoerr || noofmemerr ||emailerr){
       this.setState({clgnameerr,brancherr,eventerr,refnoerr,noofmemerr,emailerr})
