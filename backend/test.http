@@ -1,0 +1,13 @@
+
+POST https://vtavisvostav.herokuapp.com/signup
+
+{
+    "selectedevent":"coding",
+    "collegename":"pbrvits",
+    "branch":"cse",
+    "noofmembers":"3",
+    "names":"ganesh,yashu",
+    "rollnos":"2345,46557",
+    "email":"ganesh@gmail.com",
+    "refno":"3456789"
+}

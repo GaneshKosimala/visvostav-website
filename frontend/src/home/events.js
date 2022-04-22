@@ -1,5 +1,6 @@
 import React from 'react'
 import pdf from '../pdfs/rulesforfest.pdf';
+import brochure from '../pdfs/brochure.pdf';
 import presentation from "../images/presentation.png";
 import projectexpo from "../images/projectexpo.jpg";
 import quiz from "../images/quiz.jpg";
@@ -12,7 +13,10 @@ import { Link } from 'react-router-dom';
 function Events  ()  {
   return (
     <div>
-        
+        <div class="container">
+        <h1>Events we Organize</h1>
+        <div style={{ width: '100%', margin: '1% auto' }}><hr /></div>
+      </div>
       <div style={{ width: '90%', margin: '1% auto' }}><hr /></div>
       <div className='depts'>
         <div className="card branches" style={{ width: '21rem' }}>
@@ -85,7 +89,40 @@ function Events  ()  {
           </div>
         </div>
       </div>
+      <div className='container eventrules'>
+        <div className='moneyrules'>
+          <h5 className='text-primary'>Coding</h5>
+          <div className='text-dark'>200/- per team</div>
+          <div className='text-dark'>Team can have 2 members</div>
+        </div>
+        <div className='moneyrules'>
+          <h5 className='text-primary'>Paper Presentation</h5>
+          <div className='text-dark'>300/- per team</div>
+          <div className='text-dark'>Team can have 2 members</div>
+        </div>
+        <div className='moneyrules'>
+          <h5 className='text-primary'>Poster Presentation</h5>
+          <div className='text-dark'>300/- per team</div>
+          <div className='text-dark'>Team can have 2 members</div>
+        </div>
+        <div className='moneyrules'>
+          <h5 className='text-primary'>Project Expo</h5>
+          <div className='text-dark'>400/- per team</div>
+          <div className='text-dark'>Team can have 3 members</div>
+        </div>
+        <div className='moneyrules'>
+          <h5 className='text-primary'>Technical Quiz</h5>
+          <div className='text-dark'>300/- per team</div>
+          <div className='text-dark'>Team can have 3 members</div>
+        </div>
+        <div className='moneyrules'>
+          <h5 className='text-primary'>Circuitrix</h5>
+          <div className='text-dark'>100/- per person</div>
+        </div>
+      </div>
+      <div className='brochure text-center'><button type="button" class="btn btn-warning my-4 mx-2"><a href={brochure} target = "_blank" style={{ textDecoration: 'none',color:'black' }} rel='noreferrer noopener'>Brochure</a></button></div>
     </div>
+    
   )
 }
 

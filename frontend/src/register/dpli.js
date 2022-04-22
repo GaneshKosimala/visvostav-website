@@ -86,7 +86,7 @@ class Register extends Component {
       participants:'',
       strollnos:'',
       refno:'',
-      idnumber:0,
+      idnumber:'',
       value:false,
       rvalue:false,
       flag:false,
@@ -105,6 +105,7 @@ class Register extends Component {
     this.addNewItem = this.addNewItem.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.changeemail = this.changeemail.bind(this);
+    this.pdfGenerate = this.pdfGenerate.bind(this);
     this.handleBranch = this.handleBranch.bind(this);
     this.saverollno = this.saverollno.bind(this);
     this.addNewrollno = this.addNewrollno.bind(this);
@@ -112,9 +113,6 @@ class Register extends Component {
     this.showgroup = this.showgroup.bind(this);
     this.showgrouprollno=this.showgrouprollno.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
-    this.showpdfpage = this.showpdfpage.bind(this);
-    this.pdfGenerate = this.pdfGenerate.bind(this);
-    this.refresh = this.refresh.bind(this);
   }
 
   changecollegename(event) {
@@ -223,25 +221,53 @@ class Register extends Component {
   onSubmit(event) {
     event.preventDefault()
     if(this.validate()){
-      let x = Math.floor((Math.random() * 90000)+10000);
-      const part = this.state.names.join(', ').toString()
-      const rnos = this.state.rollnumbers.join(', ').toString()
-      this.setState({
-        participants:part,
-        strollnos:rnos,
-        idnumber:x,
-        
+    let x = Math.floor((Math.random() * 90000)+10000);
+    const part = this.state.names.join(', ').toString()
+    const rnos = this.state.rollnumbers.join(', ').toString()
+    this.setState({
+      participants:part,
+      strollnos:rnos,
+      idnumber:x,
+      load:true
+    })
+    const registered = {
+      selectedevent:this.state.programs,
+      collegename : this.state.collegename,
+      branch:this.state.branch,
+      noofmembers:this.state.noofmembers,
+      names:part,
+      rollnos :rnos,
+      email : this.state.email,
+      refno:this.state.refno
+    }
+    axios.post('http://localhost:4000/app/signup',registered)
+    .then(
+      response =>{
+        // console.log(response)
+        this.setState({
+          flag:true
+        })
+        console.log(response.status)
       })
-      this.setState({
-        load:true,
-        flag:true
-      })
+      .catch(
+        err => {
+          alert(`${err} : Please try again`)
+        }
+      )
     }
   }
 
-  pdfGenerate =() => {
+  payment(event){
+    event.preventDefault()
+    window.open("https://www.onlinesbi.com/sbicollect");
+  }
+  pdfGenerate = ()  => {
+    this.setState({
+      flag:false,
+      msg:true
+    })
     var doc = new jsPDF('p','pt','a4');
-    doc.html(document.querySelector("#receipt2"),{
+    doc.html(document.querySelector("#receipt"),{
       callback:function(pdf){
         var count=0
         for(var i=0;i<12;i++){
@@ -249,48 +275,14 @@ class Register extends Component {
           pdf.deletePage(pageCount);
           count +=1
         }
+        console.log(count)
         if(count === 12){
           pdf.save('receipt.pdf')
         }
       }
       
     });
-  }
-
-  payment(event){
-    event.preventDefault()
-    window.open("https://www.onlinesbi.com/sbicollect");
-  }
-  showpdfpage = ()  => {
-     
-      const registered = {
-        selectedevent:this.state.programs,
-        collegename : this.state.collegename,
-        branch:this.state.branch,
-        noofmembers:this.state.noofmembers,
-        names:this.state.participants,
-        rollnos :this.state.strollnos,
-        email : this.state.email,
-        refno:this.state.refno
-      }
-      axios.post('http://localhost:4000/app/signup',registered)
-      .then(
-        response =>{
-          this.setState({
-            flag:false,
-            msg:true,
-
-          })
-          console.log(response.status)
-        })
-        .catch(
-          err => {
-            alert(`${err} : Please try again`)
-          }
-        )
-  }
-  refresh(){
-    window.location.reload(false);
+    
   }
 
   render() {
@@ -304,11 +296,10 @@ class Register extends Component {
             <div className='fields'>
               <h1 className='display-1'>Register</h1>
               <hr />
-              <div className='text-secondary'>*If you entered any wrong values you can click on 'refresh' and refill form again</div>
+              <div className='text-secondary'>*If you entered any wrong values simply refresh page and refill form again</div>
               <div>
               <button type="button" class="btn btn-warning my-2 mx-2" onClick={this.payment}>Complete your Payment here!</button>
               <button type="button" class="btn btn-secondary my-1 mx-2"><a href={pdf} target = "_blank" style={{ textDecoration: 'none',color:'white' }} rel='noreferrer noopener'>Payment procedure</a></button>
-              <button onClick={this.refresh} className='btn btn-info mx-2'>Refresh</button>
               <br />
               <label htmlFor="exampleFormControlInput1" class="form-label my-1 mx-2 text">Select Event</label>
             <select value={this.state.programs} onChange={this.handleChange}>
@@ -453,78 +444,16 @@ class Register extends Component {
     </table>
       </div>
             </div>}
-            {this.state.flag && 
-            <div className='text-center'> <button className='btn btn-secondary text-center' onClick={this.showpdfpage} >Continue</button>
+            {this.state.flag && <div className='text-center'> <button className='btn btn-secondary text-center' onClick={this.pdfGenerate} >Download Pdf</button>
             <Link to='/' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-dark my-1 mx-2">Back to Home</button></Link>
-            <div className='text-danger text-center'>* If all details are correct click on continue to download receipt</div>
             <div className='text-danger text-center'>* If any details are incorrect fill out register form again</div>
+            <div className='text-danger text-center'>* Click on 'Download Pdf' button and don't forget to bring that hardcopy while coming to the event</div>
             </div>}
             {this.state.msg && <div>
               <div class="container confirmation">
               <h1 className='text-success display-2'>Registration Successful!!</h1>
-              <div id='receipt2' className='receipt'><br/>
-                        <div className="container-fluid topcontainer2">
-                            <div><img src={festlogo} className='festlogo' alt='festlogo' /></div>
-                            <div><h1 className='display-4'>VISVOTSAV</h1></div>
-                          </div>
-                        <hr />
-                      <div className='participantdetails'>
-                          <table class="table">
-                          <tbody>
-                          <tr>
-                            <th>ID Number</th>
-                            <td>:</td>
-                            <td>{this.state.idnumber}</td>
-                          </tr>
-                          <tr>
-                          <th>Selected Event</th>
-                          <td>:</td>
-                          <td>{this.state.programs}</td>
-                          </tr>
-                          <tr>
-                          <th>College Name</th>
-                          <td>:</td>
-                          <td>{this.state.collegename}</td>
-                          </tr>
-                          <tr>
-                          <th>Branch</th>
-                          <td>:</td>
-                          <td>{this.state.branch}</td>
-                          </tr>
-                          <tr>
-                          <th>No of Members</th>
-                          <td>:</td>
-                          <td>{this.state.noofmembers}</td>
-                          </tr>
-                          <tr>
-                          <th>Group Members</th>
-                          <td>:</td>
-                          <td>{this.state.participants}</td>
-                          </tr>
-                          <tr>
-                          <th>Roll Numbers</th>
-                          <td>:</td>
-                          <td>{this.state.strollnos}</td>
-                          </tr>
-                          <tr>
-                          <th>Email</th>
-                          <td>:</td>
-                          <td>{this.state.email}</td>
-                          </tr>
-                          <tr>
-                          <th>Transaction Reference Number</th>
-                          <td>:</td>
-                          <td>DUI{this.state.refno}</td>
-                          </tr>
-                      </tbody>
-                    </table>
-                </div>
-              </div>
-              <div className='text-center'>
-              <button className='btn btn-secondary text-center mx-2' onClick={this.pdfGenerate} >Download Receipt</button>
-              <Link to='/' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-primary my-4">Back to Home</button></Link>
-              </div>
-              <div className='text-danger text-center'>* Click on 'Download Pdf' button and don't forget to bring that hardcopy while coming to the event</div>
+              <p className='text-warning'>Wait until pdf gets generated...</p>
+              <Link to='/' style={{ textDecoration: 'none' }}><button type="button" class="btn btn-secondary my-4">Back to Home</button></Link>
               </div>
               </div>}
       </div>

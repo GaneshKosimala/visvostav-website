@@ -167,6 +167,22 @@ table{
     font-size: 26px;
     text-align: center;
 }
+.confirmation{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.eventrules{
+    display: flex;
+    flex-wrap: wrap;
+}
+.moneyrules{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    margin: 6px;
+    padding: 12px;
+    width: 32%;
+}
+.brochure{
+    margin: 2% auto;
+}
 @media screen and (max-width:480px){
     .footersections{
         width: 100%;
@@ -190,5 +206,12 @@ table{
     .socialmedia{
         font-size: 16px;
     }
-  
+    .eventrules{
+        align-items: center;
+        justify-content: center;
+    }  
+    .moneyrules{
+        width: 80%;
+    }
+
 }
